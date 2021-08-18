@@ -1,0 +1,46 @@
+.wrapper {
+  padding: 32px 0 32px 32px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1c1c1e;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c1e;
+  padding: 16px 0 24px;
+}
+
+.text {
+  height: calc(100vh - 208px);
+  overflow-y: scroll;
+  padding-right: 32px;
+  padding-bottom: 32px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    display: block;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #4f27bf;
+    border-radius: 5px 0 0 5px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+}

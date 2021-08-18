@@ -1,0 +1,47 @@
+.wrapper {
+  top: 0;
+  padding: 16px 32px;
+  position: sticky;
+  background: #4f27bf;
+  z-index: 20;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+      display: flex;
+      align-items: center;
+
+      &_text {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 24px;
+      }
+    }
+
+    &_user {
+      display: flex;
+      align-items: center;
+
+      &_name {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 16px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
